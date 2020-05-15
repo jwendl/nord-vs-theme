@@ -23,7 +23,7 @@ namespace Day1
                 var tempFuel = fuelForModule(number);
                 runningTotal += tempFuel;
 
-                while (tempFuel > 0)
+                while (tempFuel >= 0)
                 {
                     tempFuel = fuelForModule(tempFuel);
                     if (tempFuel > 0)
