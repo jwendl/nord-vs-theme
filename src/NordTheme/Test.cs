@@ -20,7 +20,7 @@ namespace Day1
             static int fuelForModulePart2(int number)
             {
                 var runningTotal = 0;
-                var tempFuel = fuelForModule(number);
+                var temVFuel = fuelForModule(number);
                 runningTotal += tempFuel;
 
                 while (tempFuel >= 0)
