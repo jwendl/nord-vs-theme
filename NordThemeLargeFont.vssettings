@@ -1,0 +1,108 @@
+<UserSettings>
+    <ApplicationIdentity version="16.0"/>
+    <ToolsOptions>
+        <ToolsOptionsCategory name="Environment" RegisteredName="Environment"/>
+    </ToolsOptions>
+    <Category name="Environment_Group" RegisteredName="Environment_Group">
+        <Category name="Environment_FontsAndColors" Category="{1EDA5DD4-927A-43a7-810E-7FD247D0DA1D}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_FontsAndColors" PackageName="Visual Studio Environment Package">
+            <PropertyValue name="Version">2</PropertyValue>
+            <FontsAndColors Version="2.0">
+                <Theme Id="{B1D75ACD-B720-46A5-875B-E5250F7CE2FC}"/>
+                <Categories>
+                    <Category GUID="{FA937F7B-C0D2-46B8-9F10-A7A92642B384}" FontIsDefault="Yes">
+                        <Items>
+                            <Item Name="Artboard Background" Foreground="0x02000000" Background="0x02000000"/>
+                        </Items>
+                    </Category>
+                    <Category GUID="{B36B0228-DBAD-4DB0-B9C7-2AD3E572010F}" FontName="Segoe UI" FontSize="9" CharSet="1" FontIsDefault="No">
+                        <Items>
+                            <Item Name="Odd Row Items" Foreground="0x00000000" Background="0x00FFFFFF" BoldFont="Yes"/>
+                            <Item Name="Even Row Items" Foreground="0x00000000" Background="0x00FFFFFF" BoldFont="Yes"/>
+                            <Item Name="Not Downloaded" Foreground="0x00999999" Background="0x00FFFFFF" BoldFont="Yes"/>
+                            <Item Name="Target Only" Foreground="0x00E9DED8" Background="0x00FFFFFF" BoldFont="Yes"/>
+                            <Item Name="Source Only" Foreground="0x00E9DED8" Background="0x00FFFFFF" BoldFont="Yes"/>
+                            <Item Name="Identical content" Foreground="0x00E9DED8" Background="0x00FFFFFF" BoldFont="Yes"/>
+                            <Item Name="Different content" Foreground="0x000014E5" Background="0x00FFFFFF" BoldFont="Yes"/>
+                        </Items>
+                    </Category>
+                    <Category GUID="{75A05685-00A8-4DED-BAE5-E7A50BFA929A}" FontName="Fira Code Retina" FontSize="12" CharSet="1" FontIsDefault="No">
+                        <Items>
+                            <Item Name="MarkerFormatDefinition/ScopeHighlight" Foreground="0x00F7EBE7" Background="0x006A564C" BoldFont="Yes"/>
+                            <Item Name="MarkerFormatDefinition/FindHighlight" Foreground="0x01000000" Background="0x007087D0" BoldFont="Yes"/>
+                            <Item Name="deltadiff.remove.word" Foreground="0x006666FF" Background="0x0052423B" BoldFont="Yes"/>
+                            <Item Name="deltadiff.add.line" Foreground="0x01000000" Background="0x00BBBC8F" BoldFont="Yes"/>
+                            <Item Name="deltadiff.remove.line" Foreground="0x01000000" Background="0x004B31BF" BoldFont="Yes"/>
+                            <Item Name="CurrentLineActiveFormat" Foreground="0x0040342E" Background="0x006A564C" BoldFont="Yes"/>
+                            <Item Name="Type" Foreground="0x009F9D5A" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="Keyword" Foreground="0x00C1A181" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="Peek Highlighted Text Unfocused" Foreground="0x01000000" Background="0x006A564C" BoldFont="Yes"/>
+                            <Item Name="Peek Highlighted Text" Foreground="0x01000000" Background="0x00C1A181" BoldFont="Yes"/>
+                            <Item Name="Peek Background Unfocused" Foreground="0x01000000" Background="0x00C1A181" BoldFont="Yes"/>
+                            <Item Name="Peek Background" Foreground="0x01000000" Background="0x00BBBC8F" BoldFont="Yes"/>
+                            <Item Name="delegate name" Foreground="0x00BBBC8F" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="class name" Foreground="0x00BBBC8F" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="MarkerFormatDefinition/HighlightedDefinition" Foreground="0x006A564C" Background="0x00BBBC8F" BoldFont="Yes"/>
+                            <Item Name="data.tools.diff.remove.line" Foreground="0x0040342E" Background="0x008BCBEB" BoldFont="Yes"/>
+                            <Item Name="MarkerFormatDefinition/HighlightVariableFormatDefinition" Foreground="0x0040342E" Background="0x00C1A181" BoldFont="Yes"/>
+                            <Item Name="vsvim_blockcaret" Foreground="0x0052423B" Background="0x008BCBEB" BoldFont="Yes"/>
+                            <Item Name="vsvim_highlightsearch" Foreground="0x01000000" Background="0x006A564C" BoldFont="Yes"/>
+                            <Item Name="vsvim_incrementalsearch" Foreground="0x01000000" Background="0x006A564C" BoldFont="Yes"/>
+                            <Item Name="ReSharper C# Late Bound Identifier" Foreground="0x00AC815E" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="ReSharper CSS property name" Foreground="0x00BBBC8F" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="ReSharper CSS attribute name" Foreground="0x00BBBC8F" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="ReSharper CSS pseudo selector" Foreground="0x008BCBEB" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="ReSharper CSS identifier" Foreground="0x00BBBC8F" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="ReSharper CSS class selector" Foreground="0x00AC815E" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="ReSharper Stack Trace Type" Foreground="0x00AC815E" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="ReSharper Interface Identifier" Foreground="0x00BBBC8F" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="ReSharper Class Identifier" Foreground="0x00AC815E" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="ReSharper Completion Replacement Range" Foreground="0x00E1E4FF" Background="0x0040342E" BoldFont="Yes"/>
+                            <Item Name="ReSharper Namespace Identifier" Foreground="0x00AC815E" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="ReSharper Unmatched Brace" Foreground="0x00BBBC8F" Background="0x006A564C" BoldFont="Yes"/>
+                            <Item Name="ReSharper Highlight Target" Foreground="0x008BCBEB" Background="0x006A564C" BoldFont="Yes"/>
+                            <Item Name="ReSharper Missing Construct Hint" Foreground="0x008BCBEB" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="ReSharper Boxing Occurrence" Foreground="0x004B31BF" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="ReSharper Code Analysis Suggestion Marker on Error Stripe" Foreground="0x00BBBC8F" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="ReSharper Code Analysis Error Marker on Error Stripe" Foreground="0x004B31BF" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="ReSharper Hint" Foreground="0x008BCBEB" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="ReSharper Suggestion" Foreground="0x008BCBEB" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="ReSharper Error Underlined" Foreground="0x004B31BF" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="Guideline" Foreground="0x01000000" Background="0x00AD8EB4" BoldFont="Yes"/>
+                            <Item Name="mergeEditor.ConflictMarginIndicator" Foreground="0x01000000" Background="0x004B31BF" BoldFont="Yes"/>
+                            <Item Name="mergeEditor.ConflictLine" Foreground="0x01000000" Background="0x004B31BF" BoldFont="Yes"/>
+                            <Item Name="mergeEditor.SelectionBoxHC" Foreground="0x01000000" Background="0x0040342E" BoldFont="Yes"/>
+                            <Item Name="mergeEditor.ConflictMarginIndicatorHC" Foreground="0x01000000" Background="0x008BCBEB" BoldFont="Yes"/>
+                            <Item Name="mergeEditor.ConflictLineHC" Foreground="0x01000000" Background="0x004B31BF" BoldFont="Yes"/>
+                        </Items>
+                    </Category>
+                    <Category GUID="{E0187991-B458-4F7E-8CA9-42C9A573B56C}" FontName="Fira Code Retina" FontSize="12" CharSet="1" FontIsDefault="No">
+                        <Items>
+                            <Item Name="Memory Unreadable" Foreground="0x0040342E" Background="0x008BCBEB" BoldFont="Yes"/>
+                            <Item Name="Function" Foreground="0x00AD8EB4" Background="0x01000001" BoldFont="Yes"/>
+                            <Item Name="Keyword" Foreground="0x00C1A181" Background="0x01000001" BoldFont="Yes"/>
+                        </Items>
+                    </Category>
+                    <Category GUID="{FF349800-EA43-46C1-8C98-878E78F46501}" FontName="Fira Code Retina" FontSize="12" CharSet="1" FontIsDefault="No">
+                        <Items>
+                            <Item Name="Error Message" Foreground="0x00E9DED8" Background="0x004B31BF" BoldFont="Yes"/>
+                            <Item Name="Current Statement (historical mode)" Foreground="0x006A564C" Background="0x00A8CEB5" BoldFont="Yes"/>
+                            <Item Name="Call Return (historical mode)" Foreground="0x00E9DED8" Background="0x006A564C" BoldFont="Yes"/>
+                            <Item Name="Coverage Not Touched Area" Foreground="0x00E9DED8" Background="0x006A564C" BoldFont="Yes"/>
+                            <Item Name="Executing Thread IP" Foreground="0x00E9DED8" Background="0x00AC815E" BoldFont="Yes"/>
+                            <Item Name="Current Statement" Foreground="0x00E9DED8" Background="0x00AC815E" BoldFont="Yes"/>
+                        </Items>
+                    </Category>
+                    <Category GUID="{A9A5637F-B2A8-422E-8FB5-DFB4625F0111}" FontName="Open Sans" FontSize="14" CharSet="1" FontIsDefault="No">
+                        <Items/>
+                    </Category>
+                    <Category GUID="{58E96763-1D3B-4E05-B6BA-FF7115FD0B7B}" FontName="Fira Code Retina" FontSize="12" CharSet="1" FontIsDefault="No">
+                        <Items/>
+                    </Category>
+                    <Category GUID="{1F987C00-E7C4-4869-8A17-23FD602268B0}" FontName="Open Sans" FontSize="12" CharSet="0" FontIsDefault="No">
+                        <Items/>
+                    </Category>
+                </Categories>
+            </FontsAndColors>
+        </Category>
+    </Category>
+</UserSettings>
