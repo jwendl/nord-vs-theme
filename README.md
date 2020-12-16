@@ -10,8 +10,6 @@ Nord Visual Studio Theme
 
 This is a port of [Nord](https://www.nordtheme.com/) to Visual Studio 2019.
 
-## Progress
-
 ![Nord Theme Preview](./docs/NordThemeLarge.png)
 
 > Font used is [Fantasque Sans Mono](https://github.com/belluzj/fantasque-sans)
