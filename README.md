@@ -1,14 +1,10 @@
-<div style="text-align: center">
+<p align="center">
+<img align="center" src="./nord-icon.png">
+</p>
 
-![Nord](./nord-icon.png)
-
-</div>
-
-<div style="text-align: center">
-
-# Nord Visual Studio Theme  
-
-</div>
+<h1 align="center" style="text-align: center">
+Nord Visual Studio Theme  
+</h1>
 
 ## Summary
 
