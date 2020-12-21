@@ -1,20 +1,14 @@
-<div style="text-align: center">
+<p align="center">
+<img align="center" src="./nord-icon.png">
+</p>
 
-![Nord](./nord-icon.png)
-
-</div>
-
-<div style="text-align: center">
-
-# Nord Visual Studio Theme  
-
-</div>
+<h1 align="center" style="text-align: center">
+Nord Visual Studio Theme  
+</h1>
 
 ## Summary
 
 This is a port of [Nord](https://www.nordtheme.com/) to Visual Studio 2019.
-
-## Progress
 
 ![Nord Theme Preview](./docs/NordThemeLarge.png)
 
