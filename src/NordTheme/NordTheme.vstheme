@@ -1,5 +1,5 @@
 ﻿<Themes>
-  <Theme Name="Nord" GUID="{abfbd139-bc9b-444b-b7e0-549bf6c32e7d}" BaseGUID="{cea41862-6883-42f9-b0ba-4bc8f5bee92d}">
+  <Theme Name="Nord" GUID="{abfbd139-bc9b-444b-b7e0-549bf6c32e7d}" BaseGUID="{b1d75acd-b720-46a5-875b-e5250f7ce2fc}">
     <Category Name="ACDCOverview" GUID="{c8887ac6-3c60-4209-9d69-8f4c12a60044}">
       <Color Name="Body">
         <Background Type="CT_RAW" Source="FF1F2839" />
@@ -44,7 +44,7 @@
         <Foreground Type="CT_RAW" Source="FF4C566A" />
       </Color>
     </Category>
-    <Category Name="Azure Resource Manager Tools" GUID="{75a05685-00a8-4ded-bae5-e7a50bfa929a}">
+    <Category Name="ColorizedSignatureHelp colors" GUID="{75a05685-00a8-4ded-bae5-e7a50bfa929a}">
       <Color Name="axml - attribute name">
         <Background Type="CT_INVALID" Source="00000000" />
         <Foreground Type="CT_RAW" Source="FFC4EBF6" />
@@ -2274,6 +2274,26 @@
         <Foreground Type="CT_INVALID" Source="00000000" />
       </Color>
       <Color Name="inline parameter name hints">
+        <Background Type="CT_INVALID" Source="00000000" />
+        <Foreground Type="CT_INVALID" Source="00000000" />
+      </Color>
+      <Color Name="EditorConfig Suggestion">
+        <Background Type="CT_INVALID" Source="00000000" />
+        <Foreground Type="CT_INVALID" Source="00000000" />
+      </Color>
+      <Color Name="inline hints">
+        <Background Type="CT_INVALID" Source="00000000" />
+        <Foreground Type="CT_INVALID" Source="00000000" />
+      </Color>
+      <Color Name="record class name">
+        <Background Type="CT_INVALID" Source="00000000" />
+        <Foreground Type="CT_INVALID" Source="00000000" />
+      </Color>
+      <Color Name="Word Wrap Glyph">
+        <Background Type="CT_INVALID" Source="00000000" />
+        <Foreground Type="CT_INVALID" Source="00000000" />
+      </Color>
+      <Color Name="UnnecessaryCodeDiagnostic">
         <Background Type="CT_INVALID" Source="00000000" />
         <Foreground Type="CT_INVALID" Source="00000000" />
       </Color>

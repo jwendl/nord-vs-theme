@@ -3,7 +3,8 @@
     <Metadata>
         <Identity Id="NordTheme.e1e706e2-05d3-4da9-8754-652cd8ab65f4" Version="1.1" Language="en-US" Publisher="JustinWendlandt" />
         <DisplayName>Nord - Theme</DisplayName>
-        <Description xml:space="preserve">VSTheme project.</Description>
+        <Description xml:space="preserve">An example of the Nord theme for Visual Studio https://www.nordtheme.com/ loosely based on the Visual Studio Code extension https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code</Description>
+        <MoreInfo>https://github.com/jwendl/nord-vs-theme</MoreInfo>
         <Icon>nord-icon.png</Icon>
         <PreviewImage>nord-icon.png</PreviewImage>
         <Tags>theme</Tags>

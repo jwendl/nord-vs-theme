@@ -45,7 +45,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="NordTheme.vstheme">
       <SubType>Designer</SubType>
     </None>
