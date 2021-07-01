@@ -33,6 +33,18 @@ jobs:
       run: msbuild src\NordTheme.sln /p:Configuration=Release /t:Rebuild
       env: 
         DeployExtension: False
+        
+    - name: Readinng Version Number
+      id: variables
+      run: |
+        $path = src\NordTheme\Properties\AssemblyInfo.cs
+        $pattern = '\[assembly: AssemblyVersion\("(.*)"\)\]'
+        (Get-Content $path) | ForEach-Object {
+          if ($_ -match $pattern) {
+            $fileVersion = [version]$matches[1]
+            echo ::set-output name=fileVersion::$fileVersion
+          }
+        }
 
     - name: Copy VSIX to Releases
       uses: actions/create-release@v1
@@ -40,8 +52,8 @@ jobs:
       with:
         draft: false
         prerelease: false
-        release_name: ${{ github.run_number }}
-        tag_name: 'nord- ${{ github.run_number }}'
+        release_name: ${{ steps.variables.output.fileVersion }}
+        tag_name: 'nord- ${{ steps.variables.output.fileVersion }}'
         body_path: CHANGELOG.md
       env:
         GITHUB_TOKEN: ${{ github.token }}
