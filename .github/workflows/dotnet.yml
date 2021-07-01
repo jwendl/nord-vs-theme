@@ -24,7 +24,9 @@ jobs:
       run: nuget restore src\NordTheme.sln
       
     - name: Fixing Missing DLL
-      run: xcopy src\Libraries\Microsoft.VisualStudio.Pkgdef.dll %userprofile%\.nuget\microsoft.visualstudio.vsixcolorcompiler\17.0.31410.258\ /y
+      run: |
+        echo %userprofile%
+        xcopy src\Libraries\Microsoft.VisualStudio.Pkgdef.dll %userprofile%\.nuget\microsoft.visualstudio.vsixcolorcompiler\17.0.31410.258\ /y
       shell: cmd
       
     - name: Build extension
