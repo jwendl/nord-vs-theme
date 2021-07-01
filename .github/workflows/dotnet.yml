@@ -17,6 +17,6 @@ jobs:
       uses: microsoft/setup-msbuild@v1.0.2
     - name: Build extension
       run: msbuild nord-vs-theme\src\NordTheme.sln /t:Rebuild
-      working-directory: $
+      working-directory: $GITHUB_WORKSPACE
       env: 
         DeployExtension: False
