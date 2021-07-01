@@ -42,9 +42,17 @@ jobs:
         (Get-Content $path) | ForEach-Object {
           if ($_ -match $pattern) {
             $fileVersion = [version]$matches[1]
-            echo ::set-output name=fileVersion::$fileVersion
+            echo fileVersion=$fileVersion >> $GITHUB_ENV
           }
         }
+
+    - name: Generate changelog
+      id: changelog
+      uses: jaywcjlove/changelog-generator@main
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        filter-author: (jwendl)
+        filter: '[R|r]elease[d]\s+[v|V]\d(\.\d+){0,2}'
 
     - name: Copy VSIX to Releases
       uses: actions/create-release@v1
@@ -52,9 +60,11 @@ jobs:
       with:
         draft: false
         prerelease: false
-        release_name: ${{ steps.variables.output.fileVersion }}
-        tag_name: 'nord- ${{ steps.variables.output.fileVersion }}'
-        body_path: CHANGELOG.md
+        release_name: ${{ env.fileVersion }}
+        tag_name: 'nord- ${{ env.fileVersion }}'
+        body_path: |
+          ${{ steps.changelog.outputs.compareurl }}
+          ${{ steps.changelog.outputs.changelog }}
       env:
         GITHUB_TOKEN: ${{ github.token }}
         

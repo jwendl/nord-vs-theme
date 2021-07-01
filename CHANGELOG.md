@@ -1,1 +1,0 @@
-- Made to work with VS 2019 and 2022
