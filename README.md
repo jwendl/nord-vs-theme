@@ -6,6 +6,8 @@
 Nord Visual Studio Theme  
 </h1>
 
+[![.NET](https://github.com/jwendl/nord-vs-theme/actions/workflows/dotnet.yml/badge.svg)](https://github.com/jwendl/nord-vs-theme/actions/workflows/dotnet.yml)
+
 ## Summary
 
 This is a port of [Nord](https://www.nordtheme.com/) to Visual Studio 2019.
