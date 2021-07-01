@@ -46,4 +46,12 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ github.token }}
         
-        
+    - name: Upload Windows Artifact
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: src\NordTheme\bin\Release\
+        asset_name: NordTheme.vsix
+        asset_content_type: application/vsix
