@@ -33,6 +33,11 @@ jobs:
       run: msbuild src\NordTheme.sln /p:Configuration=Release /t:Rebuild
       env: 
         DeployExtension: False
+        
+    - name: Use Nerdbank.GitVersioning to set version variables
+      uses: aarnott/nbgv@v0.3
+      with:
+        setAllVars: true
      
     - name: Copy VSIX to Releases
       uses: actions/create-release@v1
@@ -41,7 +46,7 @@ jobs:
         draft: false
         prerelease: false
         release_name: ${{ steps.version.outputs.version }}
-        tag_name: 'nord-${{ steps.date.outputs.date }}'
+        tag_name: 'nord-${{ NBGV_Version }}'
         body_path: CHANGELOG.md
       env:
         GITHUB_TOKEN: ${{ github.token }}
