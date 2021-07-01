@@ -33,20 +33,22 @@ jobs:
       run: msbuild src\NordTheme.sln /p:Configuration=Release /t:Rebuild
       env: 
         DeployExtension: False
-        
-    - name: Use Nerdbank.GitVersioning to set version variables
-      uses: aarnott/nbgv@v0.3
+
+    - name: Auto Increment Version
+      id: auto_version
+      uses: christian-draeger/increment-semantic-version@1.0.2
       with:
-        setAllVars: true
-     
+        current-version: '2.11.7-alpha3'
+        version-fragment: 'feature'
+
     - name: Copy VSIX to Releases
       uses: actions/create-release@v1
       id: create_release
       with:
         draft: false
         prerelease: false
-        release_name: ${{ steps.nbgv.outputs.SemVer2 }}
-        tag_name: 'nord- ${{ steps.nbgv.outputs.SemVer2 }}'
+        release_name: ${{ steps.auto_version.outputs.next-version }}
+        tag_name: 'nord- ${{ steps.auto_version.outputs.next-version }}'
         body_path: CHANGELOG.md
       env:
         GITHUB_TOKEN: ${{ github.token }}
