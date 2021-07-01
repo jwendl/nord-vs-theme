@@ -1,6 +1,6 @@
 {
   "name": "nord-theme",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "description": "A theme for Visual Studio using the Nord theme color scheme https://www.nordtheme.com/"
 }
