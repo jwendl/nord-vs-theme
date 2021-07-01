@@ -37,7 +37,7 @@ jobs:
     - name: Readinng Version Number
       id: variables
       run: |
-        $path = src\NordTheme\Properties\AssemblyInfo.cs
+        $path = 'src\NordTheme\Properties\AssemblyInfo.cs'
         $pattern = '\[assembly: AssemblyVersion\("(.*)"\)\]'
         (Get-Content $path) | ForEach-Object {
           if ($_ -match $pattern) {
