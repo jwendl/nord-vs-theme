@@ -1,5 +1,5 @@
-﻿<Themes>
-  <Theme Name="Nord" GUID="{abfbd139-bc9b-444b-b7e0-549bf6c32e7d}" BaseGUID="{cea41862-6883-42f9-b0ba-4bc8f5bee92d}">
+<Themes>
+  <Theme Name="Nord" GUID="{abfbd139-bc9b-444b-b7e0-549bf6c32e7d}">
     <Category Name="ACDCOverview" GUID="{c8887ac6-3c60-4209-9d69-8f4c12a60044}">
       <Color Name="Body">
         <Background Type="CT_RAW" Source="FF1F2839" />
