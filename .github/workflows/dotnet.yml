@@ -45,8 +45,8 @@ jobs:
       with:
         draft: false
         prerelease: false
-        release_name: ${{ steps.version.outputs.version }}
-        tag_name: 'nord-${{ NBGV_Version }}'
+        release_name: ${{ steps.nbgv.outputs.NBGV_Version }}
+        tag_name: 'nord- ${{ steps.nbgv.outputs.NBGV_Version }}'
         body_path: CHANGELOG.md
       env:
         GITHUB_TOKEN: ${{ github.token }}
