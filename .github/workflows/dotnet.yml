@@ -15,8 +15,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v1.0.2
+    - name: Navigate to Workspace
+      run: cd $GITHUB_WORKSPACE      
     - name: Build extension
       run: msbuild nord-vs-theme\src\NordTheme.sln /t:Rebuild
-      working-directory: $GITHUB_WORKSPACE
       env: 
         DeployExtension: False
