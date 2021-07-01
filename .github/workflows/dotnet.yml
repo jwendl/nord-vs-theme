@@ -50,7 +50,7 @@ jobs:
         filter: '[R|r]elease[d]\s+[v|V]\d(\.\d+){0,2}'
 
     - name: Copy VSIX to Releases
-      uses: actions/create-release@v1
+      uses: oftprops/action-gh-release@v1
       id: create_release
       if: steps.create_tag.outputs.successful
       with:
@@ -58,18 +58,10 @@ jobs:
         prerelease: false
         tag_name: ${{ steps.create_tag.outputs.version }}
         release_name: ${{ steps.create_tag.outputs.version }}
+        files: |
+          src\NordTheme\bin\Release\NordTheme.vsix
         body: |
           ${{ steps.changelog.outputs.compareurl }}
           ${{ steps.changelog.outputs.changelog }}
       env:
         GITHUB_TOKEN: ${{ github.token }}
-        
-    - name: Upload Windows Artifact
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: src\NordTheme\bin\Release\
-        asset_name: NordTheme.vsix
-        asset_content_type: application/vsix
