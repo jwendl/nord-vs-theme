@@ -18,10 +18,16 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.5
   
     - name: Setup MSBuild.exe
-      uses: microsoft/setup-msbuild@v1.0.2
+      uses: microsoft/setup-msbuild@v1
       
     - name: Restore Packages
       run: nuget restore src\NordTheme.sln
+      
+    - name: Fixing Missing DLL
+      run: |
+        echo %userprofile%
+        xcopy src\Libraries\Microsoft.VisualStudio.Pkgdef.dll %userprofile%\.nuget\microsoft.visualstudio.vsixcolorcompiler\17.0.31410.258\ /y
+      shell: cmd
       
     - name: Build extension
       run: msbuild src\NordTheme.sln /p:Configuration=Release /t:Rebuild
