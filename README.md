@@ -14,21 +14,13 @@ This is a port of [Nord](https://www.nordtheme.com/) to Visual Studio 2019.
 
 > Font used is [Cascadia Code](https://docs.microsoft.com/en-us/windows/terminal/cascadia-code)
 
-## Requirements
-
-1. Visual Studio 2019
-2. [Visual Studio Color Theme Designer](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner) installed
-
 ## Installation / Update
 
 1. Clone the repository
-3. Open the `NordTheme.sln`
-4. Uninstall any existing `Nord` theme
-5. Build the project
-6. Close Visual Studio and navigate to the output folder
-7. Double click the `NordTheme.vsix`
-8. Install and restart Visual Studio
-9. Select `Nord` from the Color Schemes
+2. Open the `NordTheme.sln`
+3. Build solution in Release
+4. Look for .vsix inside bin\Release
+5. Double click .vsix
 
 ## Contributions
 
