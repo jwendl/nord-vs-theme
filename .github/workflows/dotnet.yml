@@ -26,7 +26,7 @@ jobs:
     - name: Fixing Missing DLL
       run: |
         echo %userprofile%
-        xcopy src\Libraries\Microsoft.VisualStudio.Pkgdef.dll %userprofile%\.nuget\microsoft.visualstudio.vsixcolorcompiler\17.0.31410.258\ /y
+        xcopy src\Libraries\Microsoft.VisualStudio.Pkgdef.dll %userprofile%\.nuget\packages\microsoft.visualstudio.vsixcolorcompiler\17.0.31410.258\ /y
       shell: cmd
       
     - name: Build extension
