@@ -50,7 +50,7 @@ jobs:
         filter: '[R|r]elease[d]\s+[v|V]\d(\.\d+){0,2}'
 
     - name: Copy VSIX to Releases
-      uses: oftprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v1
       id: create_release
       if: steps.create_tag.outputs.successful
       with:
