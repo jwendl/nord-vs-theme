@@ -33,34 +33,31 @@ jobs:
       run: msbuild src\NordTheme.sln /p:Configuration=Release /t:Rebuild
       env: 
         DeployExtension: False
-        
-    - name: Readinng Version Number
-      id: variables
-      run: |
-        $path = 'src\NordTheme\Properties\AssemblyInfo.cs'
-        $pattern = '\[assembly: AssemblyVersion\("(.*)"\)\]'
-        (Get-Content $path) | ForEach-Object {
-          if ($_ -match $pattern) {
-            $fileVersion = [version]$matches[1]
-            echo fileVersion=$fileVersion >> $GITHUB_ENV
-          }
-        }
+
+    - name: Create Tag
+      id: create_tag
+      uses: jaywcjlove/create-tag-action@v1.1.0
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        package-path: ./package.json
 
     - name: Generate changelog
       id: changelog
       uses: jaywcjlove/changelog-generator@main
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+        head-ref: ${{steps.create_tag.outputs.version}}
         filter: '[R|r]elease[d]\s+[v|V]\d(\.\d+){0,2}'
 
     - name: Copy VSIX to Releases
       uses: actions/create-release@v1
       id: create_release
+      if: steps.create_tag.outputs.successful
       with:
         draft: false
         prerelease: false
-        release_name: ${{ env.fileVersion }}
-        tag_name: 'nord- ${{ env.fileVersion }}'
+        tag_name: ${{ steps.create_tag.outputs.version }}
+        release_name: ${{ steps.create_tag.outputs.version }}
         body_path: |
           ${{ steps.changelog.outputs.compareurl }}
           ${{ steps.changelog.outputs.changelog }}
