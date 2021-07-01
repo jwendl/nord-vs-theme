@@ -58,7 +58,7 @@ jobs:
         prerelease: false
         tag_name: ${{ steps.create_tag.outputs.version }}
         release_name: ${{ steps.create_tag.outputs.version }}
-        body_path: |
+        body: |
           ${{ steps.changelog.outputs.compareurl }}
           ${{ steps.changelog.outputs.changelog }}
       env:
