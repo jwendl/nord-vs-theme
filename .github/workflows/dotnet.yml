@@ -34,21 +34,14 @@ jobs:
       env: 
         DeployExtension: False
 
-    - name: Auto Increment Version
-      id: auto_version
-      uses: christian-draeger/increment-semantic-version@1.0.2
-      with:
-        current-version: '2.11.7-alpha3'
-        version-fragment: 'feature'
-
     - name: Copy VSIX to Releases
       uses: actions/create-release@v1
       id: create_release
       with:
         draft: false
         prerelease: false
-        release_name: ${{ steps.auto_version.outputs.next-version }}
-        tag_name: 'nord- ${{ steps.auto_version.outputs.next-version }}'
+        release_name: ${{ github.run_number }}
+        tag_name: 'nord- ${{ github.run_number }}'
         body_path: CHANGELOG.md
       env:
         GITHUB_TOKEN: ${{ github.token }}
