@@ -34,6 +34,11 @@ jobs:
       env: 
         DeployExtension: False
 
+    - name: Build 2019 Extension
+      run: msbuild src.2019\NordTheme.sln /p:Configuration=Release /t:Rebuild
+      env: 
+        DeployExtension: False
+
     - name: Create Tag
       id: create_tag
       uses: jaywcjlove/create-tag-action@v1.1.0
@@ -59,7 +64,7 @@ jobs:
         tag_name: ${{ steps.create_tag.outputs.version }}
         files: |
           src\NordTheme\bin\Release\NordTheme.vsix
-          src\NordTheme.VisualStudio2019\bin\Release\NordTheme.VisualStudio2019.vsix
+          src.2019\NordTheme\bin\Release\NordTheme.2019.vsix
         body: |
           ${{ steps.changelog.outputs.compareurl }}
           ${{ steps.changelog.outputs.changelog }}
