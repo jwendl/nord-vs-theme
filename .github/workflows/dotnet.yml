@@ -68,7 +68,7 @@ jobs:
 
     - name: Copy 2019 VSIX to Releases
       uses: softprops/action-gh-release@v1
-      id: create_release
+      id: create_release_2019
       if: steps.create_tag.outputs.successful
       with:
         draft: false
