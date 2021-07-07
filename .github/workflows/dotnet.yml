@@ -60,22 +60,6 @@ jobs:
         release_name: ${{ steps.create_tag.outputs.version }}
         files: |
           src\NordTheme\bin\Release\NordTheme.vsix
-        body: |
-          ${{ steps.changelog.outputs.compareurl }}
-          ${{ steps.changelog.outputs.changelog }}
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
-
-    - name: Copy 2019 VSIX to Releases
-      uses: softprops/action-gh-release@v1
-      id: create_release_2019
-      if: steps.create_tag.outputs.successful
-      with:
-        draft: false
-        prerelease: false
-        tag_name: ${{ steps.create_tag.outputs.version }}
-        release_name: ${{ steps.create_tag.outputs.version }}
-        files: |
           src\NordTheme.VisualStudio2019\bin\Release\NordTheme.VisualStudio2019.vsix
         body: |
           ${{ steps.changelog.outputs.compareurl }}
