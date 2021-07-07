@@ -70,7 +70,7 @@ namespace NordTheme
             var assemblyFileInfo = new FileInfo(GetAssemblyLocalPathFrom(typeof(NordThemePackage)));
             var installationDirectoryInfo = assemblyFileInfo.Directory;
             var installationFullPath = Path.Combine(installationDirectoryInfo.FullName, "nord.vssettings");
-            dte.ExecuteCommand("Tools.ImportandExportSettings", $"/import:{installationFullPath}");
+            dte.ExecuteCommand("Tools.ImportandExportSettings", $"/import:\"{installationFullPath}\"");
         }
 
         static string GetAssemblyLocalPathFrom(Type type)
