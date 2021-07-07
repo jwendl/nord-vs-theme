@@ -34,6 +34,9 @@ jobs:
       env: 
         DeployExtension: False
 
+    - name: Restore 2019 Packages
+      run: nuget restore src.2019\NordTheme.sln
+
     - name: Build 2019 Extension
       run: msbuild src.2019\NordTheme.sln /p:Configuration=Release /t:Rebuild
       env: 
