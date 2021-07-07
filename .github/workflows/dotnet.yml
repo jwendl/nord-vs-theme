@@ -57,7 +57,6 @@ jobs:
         draft: false
         prerelease: false
         tag_name: ${{ steps.create_tag.outputs.version }}
-        release_name: ${{ steps.create_tag.outputs.version }}
         files: |
           src\NordTheme\bin\Release\NordTheme.vsix
           src\NordTheme.VisualStudio2019\bin\Release\NordTheme.VisualStudio2019.vsix
