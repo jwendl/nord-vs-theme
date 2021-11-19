@@ -66,7 +66,7 @@ jobs:
         prerelease: false
         tag_name: ${{ steps.create_tag.outputs.version }}
         files: |
-          src.2022\NordTheme\bin\Release\NordTheme.2022.vsix
+          src.2022\NordTheme\bin\Release\NordTheme.vsix
           src.2019\NordTheme\bin\Release\NordTheme.2019.vsix
         body: |
           ${{ steps.changelog.outputs.compareurl }}
