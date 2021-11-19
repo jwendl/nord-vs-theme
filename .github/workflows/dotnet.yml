@@ -20,17 +20,11 @@ jobs:
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v1
       
-    - name: Restore Packages
-      run: nuget restore src\NordTheme.sln
-      
-    - name: Fixing Missing DLL
-      run: |
-        echo %userprofile%
-        xcopy src\Libraries\Microsoft.VisualStudio.Pkgdef.dll %userprofile%\.nuget\packages\microsoft.visualstudio.vsixcolorcompiler\17.0.31410.258\ /y
-      shell: cmd
-      
-    - name: Build Extension
-      run: msbuild src\NordTheme.sln /p:Configuration=Release /t:Rebuild
+    - name: Restore 2022 Packages
+      run: nuget restore src.2022\NordTheme.sln
+
+    - name: Build 2022 Extension
+      run: msbuild src.2022\NordTheme.sln /p:Configuration=Release /t:Rebuild
       env: 
         DeployExtension: False
 
