@@ -22,7 +22,7 @@ jobs:
       
     - name: Restore 2022 Packages
       run: nuget restore src.2022\NordTheme.sln
-
+      
     - name: Build 2022 Extension
       run: msbuild src.2022\NordTheme.sln /p:Configuration=Release /t:Rebuild
       env: 
@@ -60,7 +60,7 @@ jobs:
         prerelease: false
         tag_name: ${{ steps.create_tag.outputs.version }}
         files: |
-          src\NordTheme\bin\Release\NordTheme.vsix
+          src.2022\NordTheme\bin\Release\NordTheme.2022.vsix
           src.2019\NordTheme\bin\Release\NordTheme.2019.vsix
         body: |
           ${{ steps.changelog.outputs.compareurl }}
