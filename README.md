@@ -10,7 +10,7 @@ Nord Visual Studio Theme
 
 ## Summary
 
-This is a port of [Nord](https://www.nordtheme.com/) to Visual Studio 2019.
+This is a port of [Nord](https://www.nordtheme.com/) to Visual Studio 2022.
 
 ![Nord Theme Preview](./docs/NordThemeLarge.png)
 
