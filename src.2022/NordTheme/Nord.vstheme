@@ -91,7 +91,7 @@
       </Color>
       <Color Name="CppMacroSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFDBFBFB" />
+        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
       </Color>
       <Color Name="CppEnumSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000" />
@@ -99,11 +99,11 @@
       </Color>
       <Color Name="CppGlobalVariableSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFC8C8C8" />
+        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
       </Color>
       <Color Name="CppLocalVariableSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFCEF0F0" />
+        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
       </Color>
       <Color Name="CppParameterSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000" />
@@ -123,11 +123,11 @@
       </Color>
       <Color Name="CppFunctionSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFDCDCAA" />
+        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
       </Color>
       <Color Name="CppMemberFunctionSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFDCDCAA" />
+        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
       </Color>
       <Color Name="CppMemberFieldSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000" />
@@ -135,7 +135,7 @@
       </Color>
       <Color Name="CppStaticMemberFunctionSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFDCDCAA" />
+        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
       </Color>
       <Color Name="CppStaticMemberFieldSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000" />
@@ -159,11 +159,11 @@
       </Color>
       <Color Name="CppFunctionTemplateSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFDCDCAA" />
+        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
       </Color>
       <Color Name="CppNamespaceSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFC8C8C8" />
+        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
       </Color>
       <Color Name="CppLabelSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000" />
@@ -187,7 +187,7 @@
       </Color>
       <Color Name="CppMemberOperatorSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFB4B4B4" />
+        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
       </Color>
       <Color Name="CppNewDeleteSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000" />
@@ -199,7 +199,7 @@
       </Color>
       <Color Name="CppControlKeywordSyntacticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFD8A0DF" />
+        <Foreground Type="CT_RAW" Source="FFC4C491" />
       </Color>
       <Color Name="CppStringEscapeCharacterSyntacticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000" />
@@ -275,7 +275,7 @@
       </Color>
       <Color Name="Preprocessor Keyword">
         <Background Type="CT_INVALID" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF9B9B9B" />
+        <Foreground Type="CT_RAW" Source="FFC4C491" />
       </Color>
       <Color Name="class name">
         <Background Type="CT_INVALID" Source="00000000" />
@@ -1216,6 +1216,10 @@
       <Color Name="Line Number">
         <Background Type="CT_INVALID" Source="00000000" />
         <Foreground Type="CT_RAW" Source="FF5A9D9F" />
+      </Color>
+      <Color Name="Selected Line Number">
+        <Background Type="CT_INVALID" Source="00000000" />
+        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
       </Color>
       <Color Name="Track reverted changes">
         <Background Type="CT_RAW" Source="FF5F95FA" />
