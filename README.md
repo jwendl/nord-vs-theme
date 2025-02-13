@@ -6,6 +6,8 @@
 Nord Visual Studio Theme  
 </h1>
 
+[UPDATE] Looks like there's a more offical version out there [Nord](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio)
+
 [![.NET](https://github.com/jwendl/nord-vs-theme/actions/workflows/dotnet.yml/badge.svg)](https://github.com/jwendl/nord-vs-theme/actions/workflows/dotnet.yml)
 
 ## Summary
