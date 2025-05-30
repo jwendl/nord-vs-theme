@@ -10,6 +10,8 @@ Nord Visual Studio Theme
 
 ## Summary
 
+NOTE: Archiving this repository. Please use this theme instead: [Nord](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code). 
+
 This is a port of [Nord](https://www.nordtheme.com/) to Visual Studio 2022.
 
 ![Nord Theme Preview](./docs/NordThemeLarge.png)
